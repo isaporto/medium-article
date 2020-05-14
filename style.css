@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:wght@300;400;700;800&display=swap');
+
+/* Fonts and base */
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Lora', serif;
+  line-height: 30px;
+  color: #494949;
+}
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+
+}
+h3 {
+  font-size: 27px;
+}
+h1 {
+  color: #F0F0F0;
+}
+h2, h3 {
+  font-weight: 400;
+  color: rgb(160, 160, 160);
+}
+p {
+  font-size: 18px;
+}
+.lora {
+  font-family: 'Lora', serif;
+}
+
+/* Containers */
+div {
+  display: block;
+}
+.container {
+  max-width: 760px;
+  margin: 50px auto;
+  padding: 30px;
+}
+.banner {
+  padding: 120px 0;
+  background: url('https://source.unsplash.com/random/1000x500');
+  background-size: cover;
+  width: 100%;
+}
+.banner h1 {
+  font-size: 38px;
+  margin: 0;
+}
+.banner h2 {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  font-style: italic;
+}
+.banner .container {
+  line-height: 50px;
+}
+.lora a {
+  background-image: linear-gradient(to bottom, rgba(233, 253, 240, 1), rgba(233, 253, 240, 1));
+  text-decoration: none;
+  color: #636363;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: lighter;
+  padding: 2px 0;
+}
+.lora a:hover {
+  background-image: linear-gradient(to bottom, rgba(125, 255, 179, 1), rgba(125, 255, 179, 1));
+}
+
+/* Media queries */
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+  .banner {
+    padding: 50px;
+  }
+}
